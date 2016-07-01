@@ -18,43 +18,50 @@
   - will not
   - work!
 
-// */
-//
-// function isPalindrome(word) {
-//   var wordArray = word.split("");
-//   var reversedWord = wordArray.reverse();
-//   return wordArray.toString()==reversedWord.toString();
-// }
-// isPalindrome('butt');
-
+*/
+// Instructor Note
+// example for use:
+// isPalindrome(A man, a plan, a canal: Panama.);
 
 function isPalindrome(word) {
   wordArray = word.split('');
   wordArrayInitialNumber = wordArray;
   for (i=0; i<wordArrayInitialNumber.length; i++) {
-  if (wordArray[i]===' ') {
-    wordArray.splice(i,1);
-  }
-}
-for (i=0; i<wordArrayInitialNumber.length; i++) {
-  if (wordArray[i]===':') {
-    wordArray.splice(i,1);
-  }
-}
-for (i=0; i<wordArrayInitialNumber.length; i++) {
-  if (wordArray[i]===',') {
-    wordArray.splice(i,1);
-  }
-}
-for (i=0; i<wordArrayInitialNumber.length; i++) {
-  if (wordArray[i]==='.') {
-    wordArray.splice(i,1);
-  }
-}
+    if (wordArray[i]===' ') {
+      wordArray.splice(i,1);
+      }
+    }
+    for (i=0; i<wordArrayInitialNumber.length; i++) {
+      if (wordArray[i]===':') {
+        wordArray.splice(i,1);
+      }
+    }
+    for (i=0; i<wordArrayInitialNumber.length; i++) {
+      if (wordArray[i]===',') {
+        wordArray.splice(i,1);
+      }
+    }
+    for (i=0; i<wordArrayInitialNumber.length; i++) {
+      if (wordArray[i]==='.') {
+        wordArray.splice(i,1);
+      }
+    }
   forwardsWord = wordArray.join('');
   reverseArray = wordArray.reverse('');
   reverseWord = reverseArray.join('');
   return forwardsWord.toLowerCase() === reverseWord.toLowerCase();
 
 }
-isPalindrome('A man, a plan, a canal: Panama.');
+
+// basic solution without bonus to palindrome function included for reference
+
+// function isPalindrome(word) {
+//   var wordArray = word.split("");
+//   var reversedWord = wordArray.reverse();
+//   return wordArray.toString()==reversedWord.toString();
+// }
+// isPalindrome('mom');
+
+// Instructor Note
+// example for use:
+// isPalindrome(A man, a plan, a canal: Panama.);

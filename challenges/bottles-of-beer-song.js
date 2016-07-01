@@ -21,31 +21,37 @@
 
 */
 
-// var bottleDown = function(i) {
-bottleDown = function(bottles) {
-for (var i=bottles; i > 0; i--) {
-  if (i>2) {
-    console.log(i + " bottles of beer on the wall,");
-    console.log(i + " bottles of beer!");
-    console.log("Take one down and pass it around,");
-    console.log(i-1 + " bottles of beer on the wall...");
-    console.log(" ");
-}
-  else if (i===2) {
-    console.log(i + " bottle of beer on the wall,");
-    console.log(i + " bottle of beer!");
-    console.log("Take one down and pass it around,");
-    console.log(i-1 + " bottle of beer on the wall...");
-    console.log(" ");
-  }
+// Instructor Note
+// example for use:
+// bottleDown(100);
 
-  else {
-    console.log(i + " bottle of beer on the wall,");
-    console.log(i + " bottle of beer!");
-    console.log("Take one down and pass it around,");
-    console.log("No more bottles of beer on the wall...");
-    console.log(" ");
+bottleDown = function(bottles) {
+  for (var i=bottles; i > 0; i--) {
+    if (i>2) {
+      console.log(i + " bottles of beer on the wall,");
+      console.log(i + " bottles of beer!");
+      console.log("Take one down and pass it around,");
+      console.log(i-1 + " bottles of beer on the wall...");
+      console.log(" ");
+    }
+    else if (i===2) {
+      console.log(i + " bottle of beer on the wall,");
+      console.log(i + " bottle of beer!");
+      console.log("Take one down and pass it around,");
+      console.log(i-1 + " bottle of beer on the wall...");
+      console.log(" ");
+    }
+
+    else {
+      console.log(i + " bottle of beer on the wall,");
+      console.log(i + " bottle of beer!");
+      console.log("Take one down and pass it around,");
+      console.log("No more bottles of beer on the wall!");
+    }
   }
-}
 };
 bottleDown(5);
+
+// Instructor Note
+// example for use:
+// bottleDown(100);

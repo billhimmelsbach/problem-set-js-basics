@@ -8,8 +8,19 @@
   Reading: http://stackoverflow.com/questions/439870/why-are-primes-important-in-cryptography
 
 */
-var testPrime = function test_prime(number) {
 
+// Instructor Note
+// example for use:
+
+// to test if a single number is prime
+// testPrime(7);
+
+// or
+
+// create a list of all prime numbers up to a certain number
+// prime(40);
+
+var testPrime = function test_prime(number) {
   if (number === 1) {
     return false;
   }
@@ -18,23 +29,21 @@ var testPrime = function test_prime(number) {
   }
   else {
     for(var i = 2; i < number; i++)
-    {
-      if (number % i === 0)
       {
-        return false;
+        if (number % i === 0) {
+          return false;
+        }
       }
-    }
     return true;
   }
 };
 
 function prime(max) {
   for (i=max; i>0; i--) {
-  if (testPrime(i) === true) {
-    console.log(i);
+    if (testPrime(i) === true) {
+      console.log(i);
+    }
   }
-
-}
 }
 
 // var primeList = [];
@@ -68,3 +77,13 @@ function prime(max) {
 //
 //
 // // console.log(primeList);
+
+// Instructor Note
+// example for use:
+
+// to test if a single number is prime
+// testPrime(7);
+
+// create a list of all prime numbers up to a certain number
+// or
+// prime(40);

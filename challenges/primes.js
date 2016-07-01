@@ -20,6 +20,7 @@
 // create a list of all prime numbers up to a certain number
 // prime(40);
 
+var primeArray= [];
 var testPrime = function test_prime(number) {
   if (number === 1) {
     return false;
@@ -41,9 +42,10 @@ var testPrime = function test_prime(number) {
 function prime(max) {
   for (i=max; i>0; i--) {
     if (testPrime(i) === true) {
-      console.log(i);
+      primeArray.push(i);
     }
   }
+  console.log(primeArray);
 }
 
 // var primeList = [];

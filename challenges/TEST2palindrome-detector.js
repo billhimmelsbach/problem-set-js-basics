@@ -32,22 +32,7 @@ function isPalindrome(word) {
   wordArray = word.split('');
   wordArrayInitialNumber = wordArray;
   for (i=0; i<wordArrayInitialNumber.length; i++) {
-  if (wordArray[i]===' ') {
-    wordArray.splice(i,1);
-  }
-}
-for (i=0; i<wordArrayInitialNumber.length; i++) {
-  if (wordArray[i]===':') {
-    wordArray.splice(i,1);
-  }
-}
-for (i=0; i<wordArrayInitialNumber.length; i++) {
-  if (wordArray[i]===',') {
-    wordArray.splice(i,1);
-  }
-}
-for (i=0; i<wordArrayInitialNumber.length; i++) {
-  if (wordArray[i]==='.') {
+  if (wordArray[i]===(':' || ' ' || ',' || '.')) {
     wordArray.splice(i,1);
   }
 }

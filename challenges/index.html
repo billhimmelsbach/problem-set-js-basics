@@ -5,15 +5,23 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <title>Shakesperian Code Generator!</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" href="/shakespearian-insult-generator/master.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="shakespearian-insult-generator/master.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
-  Who doth thou want to insult?: <input type="text" name='name' id='name' placeholder='name of the person you want to insult'><br>
-  How many insults doth thou want to use?: <input type="text" id='insultNum' placeholder='number of insults you want to use'><br>
-    </form>
-
-    <button id='submit' type="submit" value="Submit">Submit</button>
-        <script type="text/javascript" src="shakespearian-insult-generator/java.js"></script>
+    <div>
+  Whom doth thou want to insult?: <input type="text" name='name' id='name' placeholder='Bob (person you want to insult)'><br>
+  <br>
+  How many insults doth thou want to use?: <input type="text" id='insultNum' placeholder='7 (number of insults you want)'><br>
+    <br>
+    <button id='submit' type="submit" value="Press to insult!">Submit</button>
+    </div>
+    <br>
+    <div>
+      <img src="shakespearian-insult-generator/shakespeare.png">
+    </div>
+    <div id='headlineInsult'>
     <h1></h1>
+    </div>
+      <script type="text/javascript" src="shakespearian-insult-generator/java.js"></script>
   </body>
 </html>
